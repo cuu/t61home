@@ -1,0 +1,290 @@
+
+# Guu TWMrc
+# Debian wheezy 2014 01 31,modified for update
+
+NoSaveUnders
+AutoRelativeResize
+#DontMoveOff 
+NoAutoRaise
+NoStackMode
+NoTitleFocus
+NoBackingStore
+NoGrabServer
+RestartPreviousState
+DecorateTransients
+RandomPlacement
+ConstrainedMoveTime 0	
+TitleFont	"-adobe-helvetica-bold-r-normal--*-90-*-*-*-*-*-*"
+#TitleFont	"-adobe-helvetica-*-r-normal-*-12-120-75-75-*-*-*-*"
+
+ResizeFont	"-adobe-helvetica-bold-r-normal--*-100-*-*-*-*-*-*"
+#MenuFont		"-adobe-helvetica-bold-r-normal--*-120-*-*-*-*-*-*"
+#MenuFont		"-*-vizung-*-*-normal--*-120-*-*-*-*-*-*"
+MenuFont "-misc-fixed-medium-r-semicondensed-*-*-120-*-*-c-*-iso8859-8"
+#MenuFont		"-*-fixed-*-r-normal-*-10-*-*-*-c-60-*-*"
+IconFont		"-adobe-helvetica-bold-r-normal--*-100-*-*-*-*-*-*"
+IconManagerFont "-adobe-helvetica-bold-r-normal--*-100-*-*-*"
+BorderWidth 2
+NoHighlight
+#OpaqueMove
+#	ClientBorderWidth
+#	SqueezeTitle
+MenuBorderWidth 1
+#BorderWidth 0
+NoMenuShadows
+NoTitleFocus
+
+ButtonIndent 0
+NoDefaults
+LeftTitleButton "~/.twm/close" = f.delete
+RightTitleButton "~/.twm/icon" = f.iconify
+RightTitleButton "~/.twm/resize" = f.resize
+RightTitleButton "~/.twm/fullsize" = f.fullzoom
+
+Pixmaps
+{
+    TitleHighlight    "gray30"
+}
+
+
+Color
+{
+    BorderColor "grey30"
+    DefaultBackground "rgb:5/5/5"
+    DefaultForeground "gray80"
+    TitleBackground "rgb:5/5/5"
+    TitleForeground "gray80"
+    MenuBackground "rgb:5/5/5"
+    MenuForeground "gray80"
+    MenuTitleBackground "gray80"
+    MenuTitleForeground "rgb:5/5/5"
+    MenuBorderColor "gray60" 
+    IconBackground "rgb:4/4/4"
+    IconForeground "gray80"
+    IconBorderColor "gray70"
+    IconManagerBackground "rgb:5/5/5"
+    IconManagerForeground "gray80"
+}
+
+
+Cursors
+{
+	Menu "hand2"
+}
+
+ForceIcons
+Icons
+{
+	"Mozilla" "~/.twm/mozilla"
+	"Mozilla Firefox" "~/.twm/ff"
+	"Firefox"	"~/.twm/ff"
+	"Iceweasel"	"~/.twm/ff"
+	"xmms" "~/.twm/Bach"
+	"XPlaycd" "~/.twm/Bach"
+	"GIMP" "~/.twm/Escher"
+	"GNU Image Manipulation Program" "~/.twm/Escher"
+	"gimp"	"~/.twm/Escher"
+	"aMule 2.1.3" "~/.twm/am"
+	"xterm" "~/.twm/xlogo32"
+	"rxvt"	"~/.twm/BeOS_apple_terminal.xbm"
+	"urxvt"	"~/.twm/BeOS_apple_terminal.xbm"
+	"Blender" "~/.twm/blender-plain.xbm"
+  "OpenSCAD" "~/.twm/openscad.xbm"
+	"MPlayer" "~/.twm/BeOS_Video.xbm"
+	"Chromium"	"~/.twm/chrome.xbm"
+	"Google-chrome"	"~/.twm/chrome.xbm"
+	"Chrome"			"~/.twm/chrome.xbm"
+	"processing-app-Base" "~/.twm/processing.xbm"
+	"gedit"				"~/.twm/gedit-2.xbm"
+	"Xfce4-terminal" "~/.twm/xfce-term.xbm"
+	"Uex"						"~/.twm/uex.xbm"
+	"Xmessage"			"~/.twm/mac_msg.xbm"
+	"Gtkterm"				"~/.twm/gtkterm.xbm"
+	"jetbrains-webstorm" "~/.twm/webstorm.xbm"
+	"jetbrains-android-studio" "~/.twm/android_studio.xbm"
+	"jetbrains-studio"	"~/.twm/android_studio.xbm"
+	"konversation"	"~/.twm/irc.xbm"
+  "smplayer" "~/.twm/mplayer.xbm"
+  "kate"     "~/.twm/kate.xbm"
+  "kdevelop" "~/.twm/kdevelop.xbm"
+  "wps"      "~/.twm/wps.xbm"
+  "nautilus" "~/.twm/natu.xbm"
+  "inkscape" "~/.twm/ink.xbm"
+  "libreoffice-writer"  "~/.twm/word.xbm"
+  "libreoffice-calc"  "~/.twm/excel.xbm"
+  
+}
+
+#MoveDelta	3 
+Function "move-or-lower" { f.move f.deltastop f.lower }
+Function "move-or-raise" { f.move f.deltastop f.raise }
+Function "move-or-iconify" { f.move f.deltastop f.iconify }
+
+Button1 = : root : f.menu "main"
+Button3 = : root : f.menu "exec"
+#Button1 = m : window|icon : f.function "move-or-raise" 
+#Button2 = m : window|icon : f.iconify
+#Button3 = m : window|icon : f.resize
+#Button1 = : window : f.focus
+
+Button1 = : title : f.function "move-or-raise"
+Button3 = : title : f.iconify
+Button1 = : icon : f.function "move-or-iconify"
+Button2 = : icon : f.iconify
+Button1 = : iconmgr : f.iconify
+Button2 = : iconmgr : f.iconify
+
+BorderWidth 0
+{
+"Audacious" 
+}
+
+BorderWidth 2
+{
+	"xterm"
+	"konsole"
+
+}
+
+NoTitle
+{
+"xmms"
+"xpad"
+"gkrellm"
+"xbiff"
+"xbiff2"
+"Chromium"
+"ibus-xim"
+"ibus-x11"
+"Audacious"
+"Chrome"
+"Google Chrome"
+}
+AutoRaise
+{
+#	"main.py"
+#	"ibus-xim"
+#	"ibus-x11"
+#	"Chrome"
+#	"Chromium"	
+}
+
+menu "todie"
+{
+	"Are you fucking sure?" ("gray80":"#773333") f.title
+	"No" f.nop
+	"Yes" f.delete
+}
+
+menu "main"
+{
+"T"  ("gray80":"#773333")	f.title
+"Raise"		f.raise
+"Lower"		f.lower
+"Focus"		f.focus
+"Unfocus"	f.unfocus
+"Move"		f.move
+""	f.nop
+"Show Iconmgr"	f.showiconmgr
+"Hide Iconmgr"	f.hideiconmgr
+#"WorkSpace manager" f.showworkspacemgr
+"Etc"			f.title
+"Date"		f.exec "xmessage `date` &"
+"LeftHand" f.exec "setxkbmap us dvorak-l &"
+"Dvorak"   f.exec "setxkbmap dvorak &"
+
+"Kill"	("gray80":"#773333") f.menu "todie"
+""	f.nop
+
+"Exit"	("gray80":"#773333")	f.menu "exit"
+}
+
+
+menu "exit"
+{
+"Are you sure ?" ("gray80":"#773333") f.title
+"No"	f.nop
+"Restart" f.restart 
+"Yes"	f.quit
+"" f.nop
+}
+
+menu "exec"
+{
+":: Applications ::"	 ("gray80":"#773333") f.title
+"Xfce4 Ternimal"	f.exec "exec xfce4-terminal &"
+"Gnome Terminal"  f.exec "exec gnome-terminal &"
+"Xterm"		f.exec "exec /usr/bin/xterm &"
+"Konsole KDE's console"	f.exec "konsole &"
+"Chrome"	f.exec "exec google-chrome --user-data-dir=/home/guu &"
+"Firefox"	f.exec "exec /usr/bin/firefox &"
+"Opera"		f.exec "opera &"
+"Konqueror"	f.exec "konqueror &"
+"KMail"		f.exec "kmail &"
+"Blender"	f.exec "blender &"
+"Gimp"		f.exec "gimp &"
+"LibreCAD" f.exec "librecad &"
+"OpenSCAD" f.exec "openscad &"
+"Xmag"	f.exec "exec /usr/bin/xmag &"
+"XClock"	f.exec "exec /usr/bin/xclock -update 1 &"
+"XFig"	f.exec "exec /usr/bin/xfig -nosplash &"
+"Xcompmgr"	f.exec "exec /usr/bin/xcompmgr -cC -t-6 -l-6 -r4 &"
+": Chat Applications :"	f.title
+"Konversation"		f.exec "konversation &"
+
+": Editors : "	f.title
+"Kate"		f.exec "kate &"
+"GVim"		f.exec "ovim &"
+"Geany"		f.exec "geany &"
+"KWrite"		f.exec "kwrite &"
+"Gedit"		f.exec "gedit &"
+"leafpad"	f.exec "leafpad &"
+
+
+": Commercial Editors : "	f.title
+"Sublime3"  f.exec "/media/sda1/home/cuu/Downloads/sublime_text_3_build_3143_x64/sublime_text_3/sublime_text &"
+"Uex"			f.exec "uex &"
+
+
+": Virtual Software : " f.title
+"Vmware"	f.exec "vmware &"
+"My Computer"	f.title
+
+#"Home"	f.exec "nemo  --no-desktop ~/ &"
+#"Home"	f.exec "dolphin ~/ &"
+"Home"	f.exec "/usr/bin/nautilus --new-window  ~/ &"
+"Sda1"  f.exec "/usr/bin/nautilus --new-window  /media/sda1/home/cuu/ &"
+
+": Daily :" f.title
+"RedNoteBook"	f.exec 	"rednotebook &"
+": Compare :" f.title
+"Meld"		f.exec "meld &"
+
+}
+
+WindowRing
+{
+"xterm"
+"rxvt"
+"urxvt"
+
+}
+
+"x" = m | s: all : f.delete
+"i" = m | s: all : f.iconify
+"t" = m | c: all : f.exec "exec /usr/bin/xterm +sb &"
+"c" = m | c: all : f.exec "exec utf8 /usr/bin/xterm -fa nSimSun -fs 8 +sb &"
+"k" = m | c: all : f.exec "exec /usr/bin/sunclock &"
+"g" = m | c: all : f.exec "exec /usr/bin/gimp &"
+"p" = m | c: all : f.exec "exec /usr/bin/xpad &"
+"l" = m | c: all : f.exec "exec xlock -bg black -fg '#aaa' &"
+"F12" = m : all : f.fullzoom
+
+#Ctrl+button3 ,appear a prg menu every where
+#Button3 = c : all : f.menu "prg" 
+
+
+Function "winup" { f.circleup }
+"Tab" = m : root|window|frame|title : f.function "winup"
+
+WarpCursor
