@@ -35,8 +35,9 @@ setxkbmap dvorak
 #sudo /usr/local/bin/fcitx  
 /usr/bin/fcitx 
 
-setxkbmap dvorak
-
+#setxkbmap dvorak
+## dvorak left hand 
+setxkbmap us dvorak-l 
 xscreensaver -no-splash &
 
 #It's important to put xrandr command here, not just run after exec twm
@@ -54,6 +55,7 @@ xscreensaver -no-splash &
 
 #disable thinkpad t61 touchpad `xinput list` 
 xinput set-prop 10 "Device Enabled" 0 
+bash 45custom_xrandr-settings 
 
 exec twm
 #exec /usr/bin/enlightenment_start

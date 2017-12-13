@@ -112,7 +112,7 @@ Icons
   "inkscape" "~/.twm/ink.xbm"
   "libreoffice-writer"  "~/.twm/word.xbm"
   "libreoffice-calc"  "~/.twm/excel.xbm"
-  
+  "sublime_text"  "~/.twm/sublime.xbm"
 }
 
 #MoveDelta	3 
