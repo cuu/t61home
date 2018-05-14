@@ -27,7 +27,10 @@ MenuFont "-misc-fixed-medium-r-semicondensed-*-*-120-*-*-c-*-iso8859-8"
 #IconFont		"-adobe-helvetica-bold-r-normal--*-100-*-*-*-*-*-*"
 IconFont  "-misc-fixed-medium-r-semicondensed-*-*-120-*-*-c-*-iso8859-8"
 
-IconManagerFont "-adobe-helvetica-bold-r-normal--*-100-*-*-*"
+#IconManagerFont "-adobe-helvetica-bold-r-normal--*-100-*-*-*"
+
+IconManagerFont "-misc-fixed-medium-r-semicondensed-*-*-100-*-*-c-*-iso8859-8"
+
 BorderWidth 2
 NoHighlight
 #OpaqueMove
@@ -125,6 +128,11 @@ Icons
   "Skycoin"    "~/.twm/skycoin.xbm"
   "Spaco"      "~/.twm/squashed.xbm"
   "Geany"      "~/.twm/geany.xbm"
+	"feh"				 "~/.twm/feh.xbm"
+	"emacs"			 "~/.twm/gnu.xbm"
+	"Portacle"   "~/.twm/portacle.xbm"
+	"resolve"    "~/.twm/davinci.xbm" ## Davinci Resolve 
+	
 }
 
 #MoveDelta	3 
@@ -171,6 +179,7 @@ NoTitle
 "Audacious"
 "Chrome"
 "Google Chrome"
+"TWM Icon Manager"
 }
 AutoRaise
 {

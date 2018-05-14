@@ -35,9 +35,9 @@ setxkbmap dvorak
 #sudo /usr/local/bin/fcitx  
 /usr/bin/fcitx 
 
-#setxkbmap dvorak
+setxkbmap dvorak
 ## dvorak left hand 
-setxkbmap us dvorak-l 
+#setxkbmap us dvorak-l
 xscreensaver -no-splash &
 
 #It's important to put xrandr command here, not just run after exec twm
@@ -54,7 +54,7 @@ xscreensaver -no-splash &
 #xrandr --output LVDS1 --mode 1920x1200 ### max resolution of t61p
 
 #disable thinkpad t61 touchpad `xinput list` 
-xinput set-prop 10 "Device Enabled" 0 
+#xinput set-prop 10 "Device Enabled" 0 
 bash 45custom_xrandr-settings 
 
 exec twm
